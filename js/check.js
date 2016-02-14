@@ -3,7 +3,7 @@ answers = {
 	"2": [98, "void"], 
 	"3": ["int"],
 	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"],
-	"/basic_program.html": ["int", "main"]
+	"/basic_program.php": ["int", "main"]
 }
 
 function correct() {
