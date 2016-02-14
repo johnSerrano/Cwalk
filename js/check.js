@@ -3,7 +3,7 @@ var g_answers = {
     "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
     "/2_return_something.php": { "answers": [ { "a": "$?", "type": "input" } ] },
     "/3_discover_integer.php": { "answers": [ { "a": "int", "type": "input" } ] },
-    "/4_n_by_number.php": {},
+    "/4_n_by_number.php": { "answers": [ { "a": /^(\s*;*)*n\s*=\s*98\s*(;\s*)+$/, "type": "regex" } ] },
     "/5_include_library.php": {},
     "/6_compile_the_file.php": {},
     "/7_list_all_the_files.php": {},
@@ -94,6 +94,18 @@ function check() {
 	    if (answers["answers"][i]["a"] != inputs[i].replace(/^\s+|\s+$/gm,''))
 	    {
 		cor = false;
+		break;
+	    }
+	}
+	else if (answers["answers"][i]["type"] == "regex")
+	{
+	    var match;
+	    
+	    match = answers["answers"][i]["a"].test(inputs[i]);
+	    if (match == false)
+	    {
+		cor = false;
+		break;
 	    }
 	}
 	else

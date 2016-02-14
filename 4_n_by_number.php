@@ -7,15 +7,12 @@
 <div id="instruction">
     <p>Set the value of n to be the integer 98.</p>
 </div>
-<div class="ide">
-  int main(void)
-  {
-    int n;
+<div class="ide">int main(void) {
+  int n;
     
-    <input type="text" id="input_0" class="input-medium"/>
-    
-    return (0);
-  }
+  <input type="text" id="input_0" class="input-large"/>
+   return (0);
+}
 </div>
 <div id="message"></div>
 <div>
