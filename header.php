@@ -31,7 +31,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body onload="install_enter_on_inputs()">
 
     <div class="container">
       <div class="header clearfix">
