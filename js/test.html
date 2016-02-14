@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<script>
+answers = [["main"], [98, "void"], ["int"]]
+
+function check(inputs, questionid) {
+
+	var answer = answers[questionid]
+	if (inputs.length != answer.length) {
+		console.log("ERROR: Wrong number of inputs");
+	}
+
+	for (i = 0; i < inputs.length;; i++) {
+		console.log("Input: " + inputs[i]);
+		console.log("Answer: " + answer[i]);
+		if (answer[i] === inputs[i]) {
+			console.log("CORRECT");
+		}
+		else {
+			console.log("WRONG");
+		}
+	}
+}
+
+check(["main", "void"], 0);
+check(["main"], 0);
+check(["void"], 0);
+</script>
