@@ -18,6 +18,11 @@ function correct() {
 	continuebutton.style.display = 'block';
 	var checkbutton = document.getElementById("check");
 	checkbutton.style.display = 'none';
+
+	var a = document.getElementById("message");
+        a.className = "alert alert-success";
+	a.innerHTML="BOOM! Congrats!";
+	a.style.display = 'block';
 }
 
 function wrong() {
