@@ -18,6 +18,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -40,15 +41,16 @@
           </ul>
         </nav>
         <h3 class="text-muted">C Programming</h3>
-
       </div>
-
-      <div class="jumbotron">
-        <h1>Basics of C</h1>
-        <p class="lead">Welcome to the Holberton School challenge. This will reinforce your knowledge of C Programming Basics.</p>
-        <p><a class="btn btn-lg btn-success" href="basic_program.html" role="button">Start Challenge</a></p>
+      <div class="ide">
+        <h1>A Basic Program</h1>
+          <p><input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void)<br>&#123;<br>&nbsp;&nbsp;&nbsp;&nbsp;return(98);<br>&#125;</p>
       </div>
-
+      <div>
+        <p><a id="check" class="btn btn-lg btn-info" href="#" role="button" onclick="check();">Check Answer</a>
+        <a id="continue" class="btn btn-lg btn-success" href="#" role="button" style="display:none;">Next Question</a>  
+        </p>
+      </div>
       <div class="row marketing">
         <div class="col-lg-6">
           <h4>Instructions</h4>
@@ -62,14 +64,7 @@
       </div>
 
       <footer class="footer">
-        <p>
-	  Brought to you by <a target="_blank" href="https://twitter.com/rickharris_dev">Rick Harris</a>,
-	  <a target="_blank" href="https://twitter.com/JohnSerrano2">John Serrano</a>,
-	  <a target="_blank" href="https://twitter.com/afrancisboeuf">Augustin "Gus" Francis-Boeuf</a>,
-	  <a target="_blank" href="https://twitter.com/julienbarbier42">Julien Barbier</a>
-	  | <a target="_blank" href="https://www.holbertonschool.com">Holberton School</a><br>
-	  <a target="_blank" href="https://github.com/johnSerrano/Cwalk">Fork it on GitHub!</a>
-	</p>
+        <p>&copy; 2016 Holberton School</p>
       </footer>
 
     </div> <!-- /container -->
