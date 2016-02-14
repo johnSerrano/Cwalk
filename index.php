@@ -23,4 +23,10 @@
         </div>
       </div>
 
+      <div class="row marketing">
+        <div class="col-lg-12">
+	   <img src="images/home.png">
+        </div>
+      </div>
+
       <? require_once('footer.php'); ?>
