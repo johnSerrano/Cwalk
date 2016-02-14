@@ -50,7 +50,7 @@
       </div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <h4>Instructions</h4>
           <ol>
             <li>Fill in each box with the expected data.</li>
@@ -61,9 +61,7 @@
         </div>
       </div>
 
-      <footer class="footer">
-        <p>&copy; 2016 Holberton School</p>
-      </footer>
+      <? require_once('footer.php'); ?>
 
     </div> <!-- /container -->
 

@@ -1,15 +1,57 @@
-answers = [["main"], [98, "void"], ["int"]]
+answers = {
+	"1": ["main"], 
+	"2": [98, "void"], 
+	"3": ["int"],
+	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"]
+}
 
-function check(inputs, questionid) {
+function correct() {
+	console.log("CORRECT");
+}
 
-	var answer = answers[questionid]
-	for (var input in inputs) {
-		console.log(input);
-	}
-	console.log(" ");
-	for each (var ans in answer) {
-		console.log(ans);
+function wrong() {
+	console.log("WRONG");
+}
+
+function get_inputs() {
+	var inputs = [];
+	var counter = 0;
+	var loop = true;
+	while (loop) {
+		var input = document.getElementById("input_" + counter);
+		if (input != null) {
+			inputs.push(input.value);
+		} else {
+			return(inputs);
+		}
+		counter++;
 	}
 }
 
-check(["main", "void"], 0);
+function check() {
+
+	inputs = get_inputs();
+
+        if (answers.hasOwnProperty(location.pathname) == false) {
+                console.log("ERROR: invalid question id: " + location.pathname);
+                return;
+        }
+        var answer = answers[location.pathname]
+
+	var cor = true;
+	if (inputs.length != answer.length) {
+		console.log("ERROR: Wrong number of inputs");
+		wrong();
+		return;
+	}	
+	for (i = 0; i < inputs.length; i++) {
+		if (answer[i] != inputs[i]) {
+			cor = false;
+		}
+	}
+	if (cor) {
+		correct();
+	} else {
+		wrong();
+	}
+}
