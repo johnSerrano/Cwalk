@@ -91,7 +91,7 @@ function check() {
     {
 	if (answers["answers"][i]["type"] == "input")
 	{
-	    if (answers["answers"][i]["a"] != inputs[i])
+	    if (answers["answers"][i]["a"] != inputs[i].replace(/^\s+|\s+$/gm,''))
 	    {
 		cor = false;
 	    }
