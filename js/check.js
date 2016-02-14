@@ -12,7 +12,7 @@ answers = {
 	"/7_list_all_the_files.php":[],
 	"/8_get_out.php":[]
 }
-_
+
 function correct() {
 	var continuebutton = document.getElementById("continue");
 	continuebutton.style.display = 'block';
@@ -21,8 +21,9 @@ function correct() {
 }
 
 function wrong() {
-	var a = document.getElementById("error");
-	a.innerHTML="<p>WRONG</p>";
+	var a = document.getElementById("message");
+        a.className = "alert alert-danger";
+	a.innerHTML="0x90 - Please try again :)";
 	a.style.display = 'block';
 }
 
@@ -44,7 +45,7 @@ function get_inputs() {
 function check() {
 	inputs = get_inputs();
 
-	var a = document.getElementById("error");
+	var a = document.getElementById("message");
 	a.style.display = "none";
         if (answers.hasOwnProperty(location.pathname) == false) {
                 console.log("ERROR: invalid question id: " + location.pathname);
