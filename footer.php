@@ -8,3 +8,11 @@
 	  <a target="_blank" href="https://github.com/johnSerrano/Cwalk">Fork it on GitHub!</a>
 	</p>
       </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
