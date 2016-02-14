@@ -9,10 +9,34 @@ var g_answers = {
     "/7_list_all_the_files.php":[],
     "/8_get_out.php":[]
 }
+var g_congrats_url = "/congrats.php";
+
+function find_next_page_url()
+{
+    var current_index;
+    var found;
+
+    current_index = location.pathname;
+    found = false;
+    for (var index in g_answers)
+    {
+	if (found == true)
+	{
+	    return (index);
+	}
+	if (index == current_index)
+	{
+	    found = true;
+	}
+    }
+    return (g_congrats_url);
+}
 
 function correct() {
     var continuebutton = document.getElementById("continue");
     continuebutton.style.display = 'block';
+    continuebutton.href = find_next_page_url();
+
     var checkbutton = document.getElementById("check");
     checkbutton.style.display = 'none';
     
@@ -20,6 +44,7 @@ function correct() {
     a.className = "alert alert-success";
     a.innerHTML="BOOM! Congrats!";
     a.style.display = 'block';
+
 }
 
 function wrong() {
@@ -61,10 +86,9 @@ function check() {
 	console.log("ERROR: Wrong number of inputs");
 	wrong();
 	return;
-    }	
+    }
     for (i = 0; i < inputs.length; i++)
     {
-	console.log(answers["answers"][i]);
 	if (answers["answers"][i]["type"] == "input")
 	{
 	    if (answers["answers"][i]["a"] != inputs[i])
