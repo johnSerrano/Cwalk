@@ -3,7 +3,11 @@ answers = {
 	"2": [98, "void"], 
 	"3": ["int"],
 	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"],
+<<<<<<< HEAD
+	"/basic_program.html": ["int", "main"]
+=======
 	"/basic_program.php": ["int", "main"]
+>>>>>>> c9050ca44c4372a72104d673730bfb94f164d8f7
 }
 
 function correct() {
