@@ -5,8 +5,7 @@
    require_once('header.php');
 ?>
 <div class="ide">
-  int main(void)
-  {
+  int main(void) {
     return (<input type="text" id="input_0" class="input-small"/>);
   }
 </div>
