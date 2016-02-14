@@ -37,7 +37,11 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="index.html">Restart Challenge</a></li>
+	    <?
+	       // Do not show the restart link/button on the homepage
+	       if (basename($_SERVER['PHP_SELF']) != 'index.php') { ?>
+            <li><a href="/">Restart Challenge</a></li>
+	    <? } ?>
           </ul>
         </nav>
         <h3 class="text-muted"><?= $page_title ?></h3>
