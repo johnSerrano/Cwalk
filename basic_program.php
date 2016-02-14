@@ -1,5 +1,5 @@
 <?
-   $page_title = "A Basic Program"
+   $page_title = "A Basic Program";
    $html_title = "Cwalk | Home";
    $html_description = "C is fun! :)";
    require_once('header.php');
