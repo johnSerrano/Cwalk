@@ -1,6 +1,6 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
+   $page_title = "A Successful Program";
+   $html_title = "Cwalk | A Successful Program";
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>

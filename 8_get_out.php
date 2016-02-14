@@ -1,11 +1,11 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
+   $page_title = "Get Out";
+   $html_title = "Cwalk | Get Out";
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
 <div id="instruction">
-    <p>Set the value of n to be the integer 98.</p>
+    <p>What will the program output?</p>
 </div>
 <div class="console">
 $ cat main.c
