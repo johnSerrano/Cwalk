@@ -1,14 +1,26 @@
 <?
-   $page_title = "A Successful Program";
-   $html_title = "Cwalk | A Successful Program";
+   $page_title = "Get Out";
+   $html_title = "Cwalk | Get Out";
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="ide">
-  <input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void)
-  {
-    return (98);
-  }
+<div id="instruction">
+    <p>What will the program output?</p>
+</div>
+<div class="console">
+$ cat main.c
+#include &#60;stdio.h&#62;
+int main(void)
+{
+    int n;
+    n = 98;
+    printf("%d\n", n);
+    return (0);
+}
+$ gcc main.c
+$ ./a.out
+<input type="text" id="input_0" class="input-small"/>
+$ 
 </div>
 <div id="error"></div>
 <div>
