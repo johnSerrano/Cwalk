@@ -5,16 +5,12 @@
    require_once('header.php');
 ?>
 <div class="ide">
-<<<<<<< HEAD:basic_program.php
-  <input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void)
-  {
-    return (98);
-=======
-  int main(void)
-  {
-    return (<input type="text" id="input_0" class="input-small"/>);
->>>>>>> 528365333d1cef0d9212b23570f2a1a54e5a448c:1_successful_program.php
+  int main (void) {
+    return(0);
   }
+</div>
+<div class="console">
+  $echo <input type="text" id="input_0" class="input-medium"/>
 </div>
 <div id="error"></div>
 <div>
