@@ -5,9 +5,9 @@
    require_once('header.php');
 ?>
 <div class="ide">
-  <input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void)
+  int main(void)
   {
-    return (98);
+    return (<input type="text" id="input_0" class="input-small"/>);
   }
 </div>
 <div id="error"></div>
