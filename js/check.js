@@ -1,6 +1,6 @@
 var g_answers = {
-    "/0_basic_program.php": { "answers": [ { "a": "int", "type" : "input"}, {"a": "main", "type": "input"} ] },
-    "/1_successful_program.php": [],
+    "/0_basic_program.php": { "answers": [ { "a": "int", "type": "input"}, {"a": "main", "type": "input"} ] },
+    "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
     "/2_return_something.php":[],
     "/3_discover_integer.php":[],
     "/4_n_by_number.php":[],
