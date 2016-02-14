@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="<?= $html_description ?>">
     <meta name="author" content="Holberton School team">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
 
     <title><?= $html_title ?></title>
 
