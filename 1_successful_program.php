@@ -4,8 +4,8 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="ide">
-  int main(void) {
+
+<div class="ide">  int main(void) {
     return (<input type="text" id="input_0" class="input-small"/>);
   }
 </div>
