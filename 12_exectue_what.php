@@ -6,7 +6,7 @@
 ?>
 <div class="console">
   $ cat main.c
-      #import &#60;stdio.h&#62;
+      #include &#60;stdio.h&#62;
 
       int main (void) {
         int n;
