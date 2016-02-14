@@ -168,6 +168,7 @@ body {
   background-color: white;
   border-style: solid;
   border-color: #5bc0de;
+  text-align: center;
 }
 
 .console > input{
