@@ -4,13 +4,13 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="ide">
-  int main (void) {
+
+<div class="ide"> int main (void) {
     return(0);
   }
 </div>
-<div class="console">
-  $echo <input type="text" id="input_0" class="input-medium"/>
+
+<div class="console">$echo <input type="text" id="input_0" class="input-medium"/>
 </div>
 <div id="message"></div>
 <div>

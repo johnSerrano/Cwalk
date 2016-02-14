@@ -172,10 +172,11 @@ body {
 }
 
 .console > input{
-  color: white;
-  background-color: black;
-  border-style: solid;
-  border-color: #3d4141;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-color: #5bc0de;
+    text-align: center;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{

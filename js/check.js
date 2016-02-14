@@ -1,13 +1,13 @@
 var g_answers = {
     "/0_basic_program.php": { "answers": [ { "a": "int", "type": "input"}, {"a": "main", "type": "input"} ] },
     "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
-    "/2_return_something.php":[],
-    "/3_discover_integer.php":[],
-    "/4_n_by_number.php":[],
-    "/5_include_library.php":[],
-    "/6_compile_the_file.php":[],
-    "/7_list_all_the_files.php":[],
-    "/8_get_out.php":[]
+    "/2_return_something.php": { "answers": [ { "a": "$?", "type": "input" } ] },
+    "/3_discover_integer.php": {},
+    "/4_n_by_number.php": {},
+    "/5_include_library.php": {},
+    "/6_compile_the_file.php": {},
+    "/7_list_all_the_files.php": {},
+    "/8_get_out.php": {}
 }
 var g_congrats_url = "/congrats.php";
 
