@@ -18,6 +18,7 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -40,7 +41,6 @@
           </ul>
         </nav>
         <h3 class="text-muted">C Programming</h3>
-
       </div>
 
       <div class="jumbotron">
@@ -61,16 +61,7 @@
         </div>
       </div>
 
-      <footer class="footer">
-        <p>
-	  Brought to you by <a target="_blank" href="https://twitter.com/rickharris_dev">Rick Harris</a>,
-	  <a target="_blank" href="https://twitter.com/JohnSerrano2">John Serrano</a>,
-	  <a target="_blank" href="https://twitter.com/afrancisboeuf">Augustin "Gus" Francis-Boeuf</a>,
-	  <a target="_blank" href="https://twitter.com/julienbarbier42">Julien Barbier</a>
-	  | <a target="_blank" href="https://www.holbertonschool.com">Holberton School</a><br>
-	  <a target="_blank" href="https://github.com/johnSerrano/Cwalk">Fork it on GitHub!</a>
-	</p>
-      </footer>
+      <? require_once() ?>
 
     </div> <!-- /container -->
 
