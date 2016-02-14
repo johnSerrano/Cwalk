@@ -4,15 +4,16 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="ide">
-  #include <input type="text" id="input_0" class="input-large"/>
-
-  int main (void) {
-    int n;
-    n=98;
-    printf("%d\n",n);
-    return(0);
-  }
+<div class="console">
+  $ cat main.c
+      int main (void) {
+        int n;
+        n=98;
+        return(0);
+      }
+  $ gcc main.c
+  $ ls -a
+  .  ..  <input type="text" id="input_0" class="input-medium"/>  main.c
 </div>
 <div id="error"></div>
 <div>
