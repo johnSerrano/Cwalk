@@ -12,7 +12,7 @@
 <div class="console">
   $echo <input type="text" id="input_0" class="input-medium"/>
 </div>
-<div id="error"></div>
+<div id="message"></div>
 <div>
     <p>
         <a id="check" class="btn btn-lg btn-info" href="#" role="button" onclick="check();">Check Answer</a>
