@@ -2,16 +2,10 @@ answers = {
 	"1": ["main"], 
 	"2": [98, "void"], 
 	"3": ["int"],
-	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"],
-<<<<<<< HEAD
-	"/basic_program.html": ["int", "main"]
-=======
 	"/basic_program.php": ["int", "main"]
->>>>>>> c9050ca44c4372a72104d673730bfb94f164d8f7
 }
 
 function correct() {
-	console.log("CORRECT");
 	var continuebutton = document.getElementById("continue");
 	continuebutton.style.display = 'block';
 	var checkbutton = document.getElementById("check");
@@ -19,7 +13,7 @@ function correct() {
 }
 
 function wrong() {
-	console.log("WRONG");
+	document.getElementById("error").innerHTML="<p>WRONG</p>";
 }
 
 function get_inputs() {
