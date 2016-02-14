@@ -1,27 +1,9 @@
 <?
    $html_title = "Cwalk | Home";
    $html_description = "C is fun! :)";
-<<<<<<< HEAD
-   require_once('header.php');
-?>
-  <body>
-
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="index.html">Restart Challenge</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">C Programming</h3>
-
-      </div>
-
-=======
    $page_title = "Let's go for a walk with C";
    require_once('header.php');
 ?>
->>>>>>> c9050ca44c4372a72104d673730bfb94f164d8f7
       <div class="jumbotron">
         <h1>Basics of C</h1>
         <p class="lead">Welcome to the Holberton School challenge. This will reinforce your knowledge of C Programming Basics.</p>
