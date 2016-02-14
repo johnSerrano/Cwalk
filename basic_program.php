@@ -46,11 +46,12 @@
         <h1>A Basic Program</h1>
       </div>
       <div class="ide">
-          <input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void)
-          &#123;
-            &nbsp;&nbsp;&nbsp;&nbsp;return(98);
-          &#125;
+          <input type="text" id="input_0" class="input-medium"/><input type="text" id="input_1" class="input-medium"/>(void)
+          {
+            return(98);
+          }
       </div>
+      <div id="error"></div>
       <div>
         <p><a id="check" class="btn btn-lg btn-info" href="#" role="button" onclick="check();">Check Answer</a>
         <a id="continue" class="btn btn-lg btn-success" href="#" role="button" style="display:none;">Next Question</a>  
