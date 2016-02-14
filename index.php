@@ -7,7 +7,7 @@
       <div class="jumbotron">
         <h1>Basics of C</h1>
         <p class="lead">Welcome to the Holberton School challenge. This will reinforce your knowledge of C Programming Basics.</p>
-        <p><a class="btn btn-lg btn-success" href="basic_program.php" role="button">Start Challenge</a></p>
+        <p><a class="btn btn-lg btn-info" href="basic_program.php" role="button">Start Challenge</a></p>
       </div>
 
       <div class="row marketing">
