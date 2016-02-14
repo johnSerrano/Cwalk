@@ -1,11 +1,9 @@
 <?
+   $page_title = "A Basic Program"
    $html_title = "Cwalk | Home";
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="title">
-    <h1>A Basic Program</h1>
-</div>
 <div class="ide">
   <input type="text" id="input_0" class="input-medium"/><input type="text" id="input_1" class="input-medium"/>(void)
   {
