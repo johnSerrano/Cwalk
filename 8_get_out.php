@@ -1,10 +1,10 @@
-<?
+B0;136;0c<?
    $page_title = "Get Out";
    $html_title = "Cwalk | Get Out";
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div id="instruction">
+<div id="instructions">
     <p>What will the program output?</p>
 </div>
 <div class="console">

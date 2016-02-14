@@ -4,14 +4,14 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div class="console">
-  $ cat main.c
-      int main (void) {
-        int n;
-        n=98;
-        return(0);
-      }
-  $ <input type="text" id="input_0" class="input-medium"/> main.c
+<div class="console">$ cat main.c
+int main(void) {
+  int n;
+
+  n = 98;
+  return (0);
+}
+$ <input type="text" id="input_0" class="input-medium"/> main.c
 </div>
 <div id="message"></div>
 <div>

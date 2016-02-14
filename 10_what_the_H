@@ -4,7 +4,7 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div id="instruction">
+<div id="instructions">
     <p>Set the char variable as the letter H.</p>
 </div>
 <div class="ide">

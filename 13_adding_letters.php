@@ -4,7 +4,7 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div id="instruction">
+<div id="instructions">
     <p>Provide the output of the program.</p>
 </div>
 <div class="console">
