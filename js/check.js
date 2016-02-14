@@ -2,11 +2,16 @@ answers = {
 	"1": ["main"], 
 	"2": [98, "void"], 
 	"3": ["int"],
-	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"]
+	"/home/john/Documents/dev/hbtn/thing/js/test.html": [12, "people"],
+	"/basic_program.html": ["int", "main"]
 }
 
 function correct() {
 	console.log("CORRECT");
+	var continuebutton = document.getElementById("continue");
+	continuebutton.style.display = 'block';
+	var checkbutton = document.getElementById("check");
+	checkbutton.style.display = 'none';
 }
 
 function wrong() {
