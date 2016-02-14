@@ -40,7 +40,7 @@
 	    <?
 	       // Do not show the restart link/button on the homepage
 	       if (basename($_SERVER['PHP_SELF']) != 'index.php') { ?>
-            <li><a href="/">Restart Challenge</a></li>
+            <li><a href="/0_basic_program.php">Restart Challenge</a></li>
 	    <? } ?>
           </ul>
         </nav>
