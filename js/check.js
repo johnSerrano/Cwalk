@@ -34,7 +34,7 @@ function find_next_page_url()
 
 function correct() {
     var continuebutton = document.getElementById("continue");
-    continuebutton.style.display = 'block';
+    continuebutton.style.display = '';
     continuebutton.href = find_next_page_url();
 
     var checkbutton = document.getElementById("check");
@@ -51,7 +51,7 @@ function wrong() {
     var a = document.getElementById("message");
     a.className = "alert alert-danger";
     a.innerHTML="0x90 - Please try again :)";
-    a.style.display = 'block';
+    a.style.display = '';
 }
 
 function get_inputs() {
