@@ -4,12 +4,12 @@
    $html_description = "C is fun! :)";
    require_once('header.php');
 ?>
-<div id="instruction">
+<div class="instructions">
     <p>Set the value of n to be the integer 98.</p>
 </div>
 <div class="ide">int main(void) {
   int n;
-    
+
   <input type="text" id="input_0" class="input-large"/>
    return (0);
 }

@@ -5,7 +5,7 @@
    require_once('header.php');
 ?>
 
-<div class="question">Given this source code, what would be the command to run to show the return value of the program?
+<div class="instructions"><p>Given this source code, what would be the command to run to show the return value of the program?</p>
 </div>
 
 <div class="ide">int main(void) {

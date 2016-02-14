@@ -5,7 +5,7 @@
    require_once('header.php');
 ?>
 
-<div class="question">Declare a variable of type integer</div>
+<div class="instructions"><p>Declare a variable of type integer</p></div>
 
 <div class="ide">int main (void) {
     <input type="text" id="input_0" class="input-medium"/> n;
