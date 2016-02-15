@@ -1,23 +1,24 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+$page_title = 'Assignation';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What does this program print?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
 ?>
-<div class="console">
-  $ cat main.c
-      #include &#60;stdio.h&#62;
+<div class="console">$ cat main.c
+#include &#60;stdio.h&#62;
 
-      int main (void) {
-        int n;
-        n=98;
-        printf(n);
-        return(0);
-      }
-  $ gcc main.c
-  $ ./a.out
-    <input type="text" id="input_0" class="input-medium"/> 
-  $
+int main (void) {
+  char c;
+
+  c = 'H';
+  printf("%c\n", c);
+  return (0);
+}
+$ gcc main.c
+$ ./a.out
+<input type="text" id="input_0" class="input-small"/>
+$ 
 </div>
 <div id="message"></div>
 <div>
