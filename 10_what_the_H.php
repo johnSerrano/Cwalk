@@ -1,0 +1,28 @@
+<?
+
+$page_title = 'Assignation';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Fill the blanks and assign the letter H to the character variable c.';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
+?>
+
+<div id="instructions">
+    <p><?= $instructions ?></p>
+</div>
+
+<div class="ide"><input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void) <input type="text" id="input_2" class="input-small"/>
+    char c;
+    c = <input type="text" id="input_3" class="input-medium"/>;
+    <input type="text" id="input_4" class="input-large"/> (<input type="text" id="input_5" class="input-small"/>);
+<input type="text" id="input_6" class="input-small"/>
+</div>
+<div id="message"></div>
+<div>
+    <p>
+        <a id="check" class="btn btn-lg btn-info" href="#" role="button" onclick="check();">Check Answer</a>
+        <a id="continue" class="btn btn-lg btn-success" href="#" role="button" style="display:none;">Next Question</a>  
+    </p>
+</div>
+<? require_once('footer.php'); ?>

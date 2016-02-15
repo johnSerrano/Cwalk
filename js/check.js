@@ -8,7 +8,9 @@ var g_answers = {
     "/6_compile_the_file.php": { "answers": [ { "a": "gcc", "type": "input" } ] },
     "/7_list_all_the_files.php": { "answers": [ { "a": "a.out", "type": "input" } ] },
     "/8_get_out.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
-    "/9_lot_of_blanks.php": { "answers": [ { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "char", "type": "input" }, { "a": "return", "type": "input" } ] }
+    "/9_lot_of_blanks.php": { "answers": [ { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "char", "type": "input" }, { "a": "return", "type": "input" } ] },
+    "/10_what_the_H.php": { "answers": [ { "a": "int", "type": "input" }, { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "'H'", "type": "input" }, { "a": "return", "type": "input" }, { "a": "0", "type": "input" }, { "a": "}", "type": "input" } ] },
+    "11" : {}
 }
 var g_congrats_url = "/congrats.php";
 
