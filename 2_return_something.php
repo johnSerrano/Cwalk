@@ -1,19 +1,19 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
+   $page_title = 'Show me the return value';
+   $html_title = $page_title . ' | cwalk';
+   $html_description = 'What would be the bash command to show the return value of any program you just ran?';
    require_once('header.php');
 ?>
 
-<div class="instructions"><p>Given this source code, what would be the command to run to show the return value of the program?</p>
+<div class="instructions">
+       <p>
+       What would be the bash command to show the return value of any program you just ran?
+       </p>
 </div>
 
-<div class="ide">int main(void) {
-  return (0);
-}
-</div>
-
-<div class="console">$ echo <input type="text" id="input_0" class="input-medium"/>
+<div class="console">$ ./any_program
+[program output]
+$ echo <input type="text" id="input_0" class="input-medium"/>
 </div>
 <div id="message"></div>
 <div>
