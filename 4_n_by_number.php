@@ -1,11 +1,15 @@
 <?
-   $page_title = "n by Number";
-   $html_title = "Cwalk | n by Number";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Setting the value of an integer';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Set the value of n to be the integer 98.';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
+
 <div class="instructions">
-    <p>Set the value of n to be the integer 98.</p>
+    <p><?= $instructions ?></p>
 </div>
 <div class="ide">int main(void) {
   int n;

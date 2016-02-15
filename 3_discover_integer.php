@@ -1,11 +1,14 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Integer';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Declare a variable of type integer.';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
 
-<div class="instructions"><p>Declare a variable of type integer</p></div>
+<div class="instructions"><p><?= $instructions ?></p></div>
 
 <div class="ide">int main (void) {
     <input type="text" id="input_0" class="input-medium"/> n;

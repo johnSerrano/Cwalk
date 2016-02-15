@@ -9,9 +9,9 @@ require_once('header.php');
 ?>
 
 <div class="instructions">
-       <p>
+    <p>
     <?= $instructions ?>
-       </p>
+    </p>
 </div>
 
 <div class="console">$ ./any_program
