@@ -1,14 +1,14 @@
 <?
-   $page_title = "Adding Letters";
-   $html_title = "Cwalk | Adding Letters";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+$page_title = 'Letter++';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What does this program print?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
 ?>
 <div id="instructions">
-    <p>Provide the output of the program.</p>
+    <p><?= $instructions ?></p>
 </div>
-<div class="console">
-$ cat main.c
+<div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
 int main(void)

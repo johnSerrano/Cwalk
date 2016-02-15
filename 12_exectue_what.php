@@ -1,5 +1,5 @@
 <?
-$page_title = 'Assignation';
+$page_title = 'Output';
 $html_title = $page_title . ' | cwalk';
 $instructions = 'What does this program print?';
 $html_description = "$page_title: $instructions";
