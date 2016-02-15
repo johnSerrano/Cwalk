@@ -1,14 +1,17 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'A Basic Program';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What are the return type and name of the function that serves as the entry point for any C program?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
 
 <div class="instructions">
-       <p>
-       What are the return type and name of the function that serves as the entry point for any C program?
-       </p>
+    <p>
+    <?= $instructions ?>
+    </p>
 </div>
 
 <div class="ide"><input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void) {

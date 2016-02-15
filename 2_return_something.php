@@ -1,13 +1,16 @@
 <?
-   $page_title = 'Show me the return value';
-   $html_title = $page_title . ' | cwalk';
-   $html_description = 'What would be the bash command to show the return value of any program you just ran?';
-   require_once('header.php');
+
+$page_title = 'Show me the return value';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What would be the bash command to show the return value of any program you just ran?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
 
 <div class="instructions">
        <p>
-       What would be the bash command to show the return value of any program you just ran?
+    <?= $instructions ?>
        </p>
 </div>
 

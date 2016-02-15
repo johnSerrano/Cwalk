@@ -1,14 +1,17 @@
 <?
-   $page_title = "A Successful Program";
-   $html_title = "Cwalk | A Successful Program";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'A Successful Program';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What should be the returned value of the main function on success?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
 
 <div class="instructions">
-       <p>
-       What should be the returned value of the main function on success?
-       </p>
+    <p>
+    <?= $instructions ?>
+    </p>
 </div>
 
 <div class="ide">int main(void) {
