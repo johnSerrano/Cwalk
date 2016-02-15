@@ -5,9 +5,15 @@
    require_once('header.php');
 ?>
 
-<div class="ide">  int main(void) {
-    return (<input type="text" id="input_0" class="input-small"/>);
-  }
+<div class="instructions">
+       <p>
+       What should be the returned value of the main function on success?
+       </p>
+</div>
+
+<div class="ide">int main(void) {
+  return (<input type="text" id="input_0" class="input-small"/>);
+}
 </div>
 <div id="message"></div>
 <div>
