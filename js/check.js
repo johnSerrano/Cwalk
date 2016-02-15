@@ -7,7 +7,8 @@ var g_answers = {
     "/5_include_library.php": { "answers": [ { "a": "<stdio.h>", "type": "input" } ] },
     "/6_compile_the_file.php": { "answers": [ { "a": "gcc", "type": "input" } ] },
     "/7_list_all_the_files.php": { "answers": [ { "a": "a.out", "type": "input" } ] },
-    "/8_get_out.php": {}
+    "/8_get_out.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
+    "/9_lot_of_blanks.php": { "answers": [ { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "char", "type": "input" }, { "a": "return", "type": "input" } ] }
 }
 var g_congrats_url = "/congrats.php";
 

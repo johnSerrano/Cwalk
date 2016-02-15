@@ -1,18 +1,24 @@
-B0;136;0c<?
-   $page_title = "Get Out";
-   $html_title = "Cwalk | Get Out";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+<?
+
+$page_title = 'printf, %d';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What is the output of this program?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
+
 <div id="instructions">
-    <p>What will the program output?</p>
+    <p><?= $instructions ?></p>
 </div>
-<div class="console">
-$ cat main.c
+
+<div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
+
 int main(void)
 {
     int n;
+
     n = 98;
     printf("%d\n", n);
     return (0);

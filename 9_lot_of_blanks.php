@@ -1,14 +1,22 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Character variable';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Fill the blanks and declare a variable of type character, named "c"';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
+<div id="instructions">
+    <p><?= $instructions ?></p>
+</div>
+
 <div class="ide">
-  int <input type="text" id="input_0" class="input-large"/> (void) <input type="text" id="input_1" class="input-small"/>
-    <input type="text" id="input_2" class="input-large"/> c;
-    <input type="text" id="input_3" class="input-large"/>(0);
-  }
+int <input type="text" id="input_0" class="input-large"/>(void) <input type="text" id="input_1" class="input-small"/>
+  <input type="text" id="input_2" class="input-large"/> c;
+
+  <input type="text" id="input_3" class="input-large"/> (0);
+}
 </div>
 <div id="message"></div>
 <div>
