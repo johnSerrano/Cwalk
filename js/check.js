@@ -5,7 +5,7 @@ var g_answers = {
     "/3_discover_integer.php": { "answers": [ { "a": "int", "type": "input" } ] },
     "/4_n_by_number.php": { "answers": [ { "a": /^(\s*;*)*n\s*=\s*98\s*(;\s*)+$/, "type": "regex" } ] },
     "/5_include_library.php": { "answers": [ { "a": "<stdio.h>", "type": "input" } ] },
-    "/6_compile_the_file.php": {},
+    "/6_compile_the_file.php": { "answers": [ { "a": "gcc", "type": "input" } ] },
     "/7_list_all_the_files.php": {},
     "/8_get_out.php": {}
 }

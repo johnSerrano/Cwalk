@@ -1,9 +1,16 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Compilation';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Compile this program with gcc.';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
+<div class="instructions">
+    <p><?= $instructions ?></p>
+</div>
+
 <div class="console">$ cat main.c
 int main(void) {
   int n;
