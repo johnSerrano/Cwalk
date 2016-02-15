@@ -1,9 +1,17 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Include';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'Include the right header for this program to compile without any warnings.';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
+
+<div class="instructions">
+    <p><?= $instructions ?></p>
+</div>
+
 <div class="ide">#include <input type="text" id="input_0" class="input-large"/>
 
 int main(void) {
