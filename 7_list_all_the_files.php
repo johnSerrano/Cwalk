@@ -1,19 +1,26 @@
 <?
-   $page_title = "A Basic Program";
-   $html_title = "Cwalk | Home";
-   $html_description = "C is fun! :)";
-   require_once('header.php');
+
+$page_title = 'Gcc\'s default executable output file name';
+$html_title = $page_title . ' | cwalk';
+$instructions = 'What is the default executable output file name of gcc?';
+$html_description = "$page_title: $instructions";
+require_once('header.php');
+
 ?>
-<div class="console">
-  $ cat main.c
-      int main (void) {
-        int n;
-        n=98;
-        return(0);
-      }
-  $ gcc main.c
-  $ ls -a
-  .  ..  <input type="text" id="input_0" class="input-medium"/>  main.c
+<div class="instructions">
+    <p><?= $instructions ?></p>
+</div>
+
+<div class="console">$ cat main.c
+    int main (void) {
+      int n;
+
+      n = 98;
+      return (0);
+    }
+$ gcc main.c
+$ ls -a
+.  ..  <input type="text" id="input_0" class="input-medium"/>  main.c
 </div>
 <div id="message"></div>
 <div>
