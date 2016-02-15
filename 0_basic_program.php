@@ -5,6 +5,12 @@
    require_once('header.php');
 ?>
 
+<div class="instructions">
+       <p>
+       What are the return type and name of the function that serves as the entry point for any C program?
+       </p>
+</div>
+
 <div class="ide"> <input type="text" id="input_0" class="input-medium"/> <input type="text" id="input_1" class="input-medium"/>(void) {
     return (98);
   }
