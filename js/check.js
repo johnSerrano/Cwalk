@@ -10,7 +10,7 @@ var g_answers = {
     "/8_get_out.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
     "/9_lot_of_blanks.php": { "answers": [ { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "char", "type": "input" }, { "a": "return", "type": "input" } ] },
     "/10_what_the_H.php": { "answers": [ { "a": "int", "type": "input" }, { "a": "main", "type": "input" }, { "a": "{", "type": "input" }, { "a": "'H'", "type": "input" }, { "a": "return", "type": "input" }, { "a": "0", "type": "input" }, { "a": "}", "type": "input" } ] },
-    "11" : {}
+    "/11_print_char.php": { "answers": [ { "a": "include", "type": "input" }, { "a": ";", "type": "input" }, { "a": ";", "type": "input" }, { "a": /^%c$/, "type": "regex" }, { "a": ";", "type": "input" }, { "a": ";", "type": "input" } ] }
 }
 var g_congrats_url = "/congrats.php";
 
