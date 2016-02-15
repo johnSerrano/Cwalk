@@ -1,4 +1,4 @@
-<?
+B0;136;0c<?
 
 $page_title = 'Character variable';
 $html_title = $page_title . ' | cwalk';
@@ -7,7 +7,7 @@ $html_description = "$page_title: $instructions";
 require_once('header.php');
 
 ?>
-<div id="instructions">
+<div class="instructions">
     <p><?= $instructions ?></p>
 </div>
 

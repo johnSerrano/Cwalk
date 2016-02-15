@@ -8,7 +8,7 @@ require_once('header.php');
 
 ?>
 
-<div id="instructions">
+<div class="instructions">
     <p><?= $instructions ?></p>
 </div>
 

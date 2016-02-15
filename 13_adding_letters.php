@@ -5,7 +5,7 @@ $instructions = 'What does this program print?';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
-<div id="instructions">
+<div class="instructions">
     <p><?= $instructions ?></p>
 </div>
 <div class="console">$ cat main.c
