@@ -21,12 +21,11 @@ var g_answers = {
 
     // functions basics
     "/16_call_a_function.php": { "answers": [ { "a": /^(\s*;*)*f\s*\(\s*\)\s*(;\s*)+$/, "type": "regex" } ] },
-
+    "/17_holberton_function.php": { "answers": [ {"a": "Holberton", "type": "input"} ] },
     "/18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
-
+    "/19_return_values.php": { "answers": [ { "a": "98", "type": "input" } ] },
     "/20_return_n.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
-
-
+    "/21_return_a_returned_value.php": { "answers": [ { "a": "98", "type": "input" } ] },
     "/22_more_f_calls.php": { "answers": [ { "a": /^402$/, "type": "regex" }, { "a": /^98$/, "type": "regex" }, { "a": /^0$/, "type": "regex" } ] },
     "/23_even_more_f_calls.php": { "answers": [ { "a": /^98$/, "type": "regex" }, { "a": /^17$/, "type": "regex" }, { "a": /^10$/, "type": "regex" }, { "a": /^13$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },
     "/24_sub.php": { "answers": [ { "a": /^-94$/, "type": "regex" }, { "a": /^-3$/, "type": "regex" }, { "a": /^4$/, "type": "regex" }, { "a": /^-1$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },

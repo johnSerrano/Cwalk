@@ -1,5 +1,5 @@
 <?
-$page_title = 'Int and Char';
+$page_title = 'Return a Returned Value';
 $html_title = $page_title . ' | cwalk';
 $instructions = 'What does this program print?';
 $html_description = "$page_title: $instructions";
