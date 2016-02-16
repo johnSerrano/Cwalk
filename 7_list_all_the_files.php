@@ -20,7 +20,7 @@ require_once('header.php');
     }
 $ gcc main.c
 $ ls -a
-.  ..  <input type="text" id="input_0" class="input-medium"/>  main.c
+.  ..  <input type="text" id="input_0" class="input-large"/>  main.c
 </div>
 <div id="message"></div>
 <div>

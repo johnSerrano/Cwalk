@@ -16,6 +16,7 @@ int f(void);
 int main(void)
 {
     int n;
+
     n = f();
     printf("%d\n", n);
     return (0);
@@ -23,7 +24,7 @@ int main(void)
 
 int f(void)
 {
-    return(98);
+    return(402);
 }
 
 $ gcc main.c

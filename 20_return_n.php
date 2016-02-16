@@ -23,7 +23,7 @@ int main(void)
 
 int f(void)
 {
-    return (98);
+    return (402);
 }
 
 $ gcc main.c
