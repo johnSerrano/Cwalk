@@ -13,6 +13,7 @@ var g_answers = {
     "/11_print_char.php": { "answers": [ { "a": "include", "type": "input" }, { "a": ";", "type": "input" }, { "a": ";", "type": "input" }, { "a": /^%c$/, "type": "regex" }, { "a": ";", "type": "input" }, { "a": ";", "type": "input" } ] },
     "/12_exectue_what.php": { "answers": [ { "a": /^H$/, "type": "regex" } ] },
     "/13_adding_letters.php": { "answers": [ { "a": /^I$/, "type": "regex" } ] },
+    "/14_printing_digits.php": { "answers": [ { "a": /^8$/, "type": "regex" } ] },
 }
 var g_congrats_url = "/congrats.php";
 
