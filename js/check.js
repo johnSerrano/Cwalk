@@ -1,7 +1,10 @@
 var g_answers = {
+    // main
     "/0_basic_program.php": { "answers": [ { "a": "int", "type": "input"}, {"a": "main", "type": "input"} ] },
     "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
     "/2_return_something.php": { "answers": [ { "a": "$?", "type": "input" } ] },
+
+    // integers and chars
     "/3_discover_integer.php": { "answers": [ { "a": "int", "type": "input" } ] },
     "/4_n_by_number.php": { "answers": [ { "a": /^(\s*;*)*n\s*=\s*98\s*(;\s*)+$/, "type": "regex" } ] },
     "/5_include_library.php": { "answers": [ { "a": "<stdio.h>", "type": "input" } ] },
@@ -14,9 +17,11 @@ var g_answers = {
     "/12_exectue_what.php": { "answers": [ { "a": /^H$/, "type": "regex" } ] },
     "/13_adding_letters.php": { "answers": [ { "a": /^I$/, "type": "regex" } ] },
     "/14_printing_digits.php": { "answers": [ { "a": /^8$/, "type": "regex" } ] },
-    "/14_printing_digits.php": { "answers": [ { "a": /^8$/, "type": "regex" } ] },
     "/15_int_and_char.php": { "answers": [ { "a": /^J$/, "type": "regex" } ] },
-    "18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
+
+    // functions basics
+    "/18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
+    "/20_return_n.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
 
 }
 var g_congrats_url = "/congrats.php";
