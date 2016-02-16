@@ -1,4 +1,4 @@
-B0;136;0cvar g_answers = {
+var g_answers = {
     // main
     "/0_basic_program.php": { "answers": [ { "a": "int", "type": "input"}, {"a": "main", "type": "input"} ] },
     "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
@@ -23,7 +23,14 @@ B0;136;0cvar g_answers = {
     "/16_call_a_function.php": { "answers": [ { "a": /^(\s*;*)*f\s*\(\s*\)\s*(;\s*)+$/, "type": "regex" } ] },
 
     "/18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
+
     "/20_return_n.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
+
+
+
+
+
+    "/25_scope.php": { "answers": [ { "a": /^13$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^101$/, "type": "regex" }, { "a": /^0$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^0$/, "type": "regex" } ] },
 
 }
 var g_congrats_url = "/congrats.php";
