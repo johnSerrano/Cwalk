@@ -28,8 +28,8 @@ var g_answers = {
 
 
 
-
-
+    "/23_even_more_f_calls.php": { "answers": [ { "a": /^98$/, "type": "regex" }, { "a": /^17$/, "type": "regex" }, { "a": /^10$/, "type": "regex" }, { "a": /^13$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },
+    "/24_sub.php": { "answers": [ { "a": /^-94$/, "type": "regex" }, { "a": /^-3$/, "type": "regex" }, { "a": /^4$/, "type": "regex" }, { "a": /^-1$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },
     "/25_scope.php": { "answers": [ { "a": /^13$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^101$/, "type": "regex" }, { "a": /^0$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^0$/, "type": "regex" } ] },
 
 }
