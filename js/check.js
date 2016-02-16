@@ -1,4 +1,4 @@
-var g_answers = {
+B0;136;0cvar g_answers = {
     // main
     "/0_basic_program.php": { "answers": [ { "a": "int", "type": "input"}, {"a": "main", "type": "input"} ] },
     "/1_successful_program.php": { "answers": [ { "a": "0", "type": "input" } ]},
