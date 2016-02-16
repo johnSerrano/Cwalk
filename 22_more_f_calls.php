@@ -1,7 +1,7 @@
 <?
-$page_title = 'Return int';
+$page_title = 'More functions calls';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'What does this program print?';
+$instructions = 'Fill the blanks.';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
@@ -10,26 +10,32 @@ require_once('header.php');
 </div>
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
-int f(void);
+void f(int);
 
 int main(void)
 {
     int n;
 
-    n = f();
-    printf("%d\n", n);
+    n = 98;
+    f(402);
+    printf("\n");
+    f(n);
+    printf("\n");
     return (0);
 }
 
-int f(void)
+void f(int n)
 {
-    return (98);
+    printf("%d", n);
 }
 
 $ gcc main.c
 $ ./a.out
-<input type="text" id="input_0" class="input-large"/>
-$
+<input type="text" id="input_0" class="input-medium"/>
+<input type="text" id="input_1" class="input-medium"/>
+$ echo $?
+<input type="text" id="input_2" class="input-medium"/>
+$ 
 </div>
 <div id="message"></div>
 <div>
