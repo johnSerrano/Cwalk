@@ -1,30 +1,24 @@
 <?
-$page_title = 'Int and Char';
+
+$page_title = 'Call a Function';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'What does this program print?';
+$instructions = 'Call the function f.';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
-?>
-<div class="instructions">
-    <p><?= $instructions ?></p>
-</div>
-<div class="console">$ cat main.c
-#include &#60;stdio.h&#62;
 
-int main(void)
-{
-    int n;
-    char c;
-    c = 'H';
-    n = 2;
-    c = c + n;
-    printf("%c\n", c);
-    return (0);
+?>
+
+<div class="instructions">
+    <p>
+    <?= $instructions ?>
+    </p>
+</div>
+
+<div class="ide">void f(void);
+int main(void) {
+  <input type="text" id="input_0" class="input-medium"/>
+  return (0);
 }
-$ gcc main.c
-$ ./a.out
-<input type="text" id="input_0" class="input-small"/>
-$
 </div>
 <div id="message"></div>
 <div>

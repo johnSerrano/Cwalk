@@ -1,5 +1,5 @@
 <?
-$page_title = 'Int and Char';
+$page_title = 'Funciton output';
 $html_title = $page_title . ' | cwalk';
 $instructions = 'What does this program print?';
 $html_description = "$page_title: $instructions";
@@ -10,16 +10,18 @@ require_once('header.php');
 </div>
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
+void f(void);
 
 int main(void)
 {
-    int n;
-    char c;
-    c = 'H';
-    n = 2;
-    c = c + n;
-    printf("%c\n", c);
+    f();
     return (0);
+}
+
+void f(void)
+{
+    printf("Holberton");
+    return;
 }
 $ gcc main.c
 $ ./a.out
