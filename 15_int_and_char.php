@@ -1,29 +1,30 @@
 <?
-
-$page_title = 'A Basic Program';
+$page_title = 'Int and Char';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'What are the return type and name of the function that serves as the entry point for any C program?';
+$instructions = 'What does this program print?';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
-
 ?>
-
 <div class="instructions">
-    <p>
-    <?= $instructions ?>
-    </p>
+    <p><?= $instructions ?></p>
 </div>
+<div class="console">$ cat main.c
+#include &#60;stdio.h&#62;
 
-<div class="ide">What whould be the output?<input type="text" id="input_0" class="input-medium"/>
-int main (void) {
-  char c;
-  int n;
-  c = 'H';
-  n = 2;
-  c = c + n;
-  printf("%c", c);
-  return(0);
+int main(void)
+{
+    int n;
+    char c;
+    c = 'H';
+    n = 2;
+    c = c + n;
+    printf("%c\n", c);
+    return (0);
 }
+$ gcc main.c
+$ ./a.out
+<input type="text" id="input_0" class="input-small"/>
+$
 </div>
 <div id="message"></div>
 <div>
