@@ -14,6 +14,10 @@ var g_answers = {
     "/12_exectue_what.php": { "answers": [ { "a": /^H$/, "type": "regex" } ] },
     "/13_adding_letters.php": { "answers": [ { "a": /^I$/, "type": "regex" } ] },
     "/14_printing_digits.php": { "answers": [ { "a": /^8$/, "type": "regex" } ] },
+    "/14_printing_digits.php": { "answers": [ { "a": /^8$/, "type": "regex" } ] },
+    "/15_int_and_char.php": { "answers": [ { "a": /^J$/, "type": "regex" } ] },
+    "18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
+
 }
 var g_congrats_url = "/congrats.php";
 
