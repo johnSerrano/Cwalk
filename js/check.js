@@ -20,6 +20,8 @@ var g_answers = {
     "/15_int_and_char.php": { "answers": [ { "a": /^J$/, "type": "regex" } ] },
 
     // functions basics
+    "/16_call_a_function.php": { "answers": [ { "a": /^(\s*;*)*f\s*\(\s*\)\s*(;\s*)+$/, "type": "regex" } ] },
+
     "/18_f_printf.php": { "answers": [ { "a": /^Folberton$/, "type": "regex" } ] },
     "/20_return_n.php": { "answers": [ { "a": /^98$/, "type": "regex" } ] },
 
