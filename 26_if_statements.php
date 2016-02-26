@@ -1,22 +1,37 @@
 <?
-
-$page_title = 'Character variable';
+$page_title = 'If Statements';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'Fill the blanks and declare a variable of type character, named "c"';
+$instructions = 'Fill the blanks.';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
-
 ?>
 <div class="instructions">
     <p><?= $instructions ?></p>
 </div>
+<div class="console">$ cat main.c
+#include &#60;stdio.h&#62;
 
-<div class="ide">
-int <input type="text" id="input_0" class="input-large"/>(void) <input type="text" id="input_1" class="input-small"/>
-  <input type="text" id="input_2" class="input-large"/> c;
-
-  <input type="text" id="input_3" class="input-large"/> (0);
+int main(void)
+{
+    int n = 5;
+    if (n == 1) {
+        printf("A");
+    }
+    if (n == 5) {
+        printf("B");
+    }
+    return (0);
 }
+
+void f(int n)
+{
+    printf("%d", n);
+}
+
+$ gcc main.c
+$ ./a.out
+<input type="text" id="input_0" class="input-small"/>
+$
 </div>
 <div id="message"></div>
 <div>
