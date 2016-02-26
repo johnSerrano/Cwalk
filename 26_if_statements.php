@@ -15,17 +15,12 @@ int main(void)
 {
     int n = 5;
     if (n == 1) {
-        printf("A");
+        printf("A\n");
     }
     if (n == 5) {
-        printf("B");
+        printf("B\n");
     }
     return (0);
-}
-
-void f(int n)
-{
-    printf("%d", n);
 }
 
 $ gcc main.c

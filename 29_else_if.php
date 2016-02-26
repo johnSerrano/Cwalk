@@ -1,5 +1,5 @@
 <?
-$page_title = 'Conditional Operators';
+$page_title = 'Else If Statements';
 $html_title = $page_title . ' | cwalk';
 $instructions = 'Fill the blanks.';
 $html_description = "$page_title: $instructions";
@@ -14,25 +14,24 @@ require_once('header.php');
 int main(void)
 {
     int n = 5;
-    if (n == 4) {
-        printf("A\n");
+    int m = 4
+    if (n &62;= 1) {
+        f(n);
     }
-    if (n != 4) {
-        printf("B\n");
-    }
-    if (n &62; 4) {
-        printf("C\n");
-    }
-    if (n &60; 4) {
-        printf("D\n");
+    else if (m &60;= 4) {
+        printf("B");
     }
     return (0);
+}
+
+void f(int n)
+{
+    printf("%d\n", n);
 }
 
 $ gcc main.c
 $ ./a.out
 <input type="text" id="input_0" class="input-small"/>
-<input type="text" id="input_1" class="input-small"/>
 $
 </div>
 <div id="message"></div>

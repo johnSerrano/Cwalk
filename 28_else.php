@@ -14,18 +14,13 @@ require_once('header.php');
 int main(void)
 {
     int n = 5;
-    if (n < 1) {
-        printf("A");
+    if (n &60; 1) {
+        printf("A\n");
     }
     else {
-        printf("B");
+        printf("B\n");
     }
     return (0);
-}
-
-void f(int n)
-{
-    printf("%d", n);
 }
 
 $ gcc main.c
