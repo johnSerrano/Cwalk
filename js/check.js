@@ -36,6 +36,14 @@ var g_answers = {
     "/29_else_if.php": { "answers": [ {"a": "5", "type": "input"} ] },
     "/30_all_together_now.php": { "answers": [ {"a": "C", "type": "input"} ] },
     "/31_variables_again.php": { "answers": [ {"a": "1", "type": "input"} ] },
+    "/32_while_loop.php": { "answers": [ {"a": /\s*4\s*/, "type": "regex"} ] },
+    "/33_another_while_loop.php": { "answers": [ {"a": "31", "type": "input"} ] },
+    "/34_while_no_time_passes.php": { "answers": [ {"a": "7", "type": "input"} ] },
+    "/35_do_it_anyways.php": { "answers": [ {"a": "8", "type": "input"} ] },
+    "/36_loop-dee-loop.php": { "answers": [ {"a": "012340123012010", "type": "input"} ] },
+    "/37_for_four_fore.php": { "answers": [ {"a": "012340123012010", "type": "input"} ] },
+    "/38_i_could_go_for_another_loop.php": { "answers": [ {"a": /\s*4\s*/, "type": "regex"}, {"a": /\s*8\s*/, "type": "regex"} ] },
+    "/39_alphabet.php": { "answers": [ {"a": "abcdefghijklmnopqrstuvwxyz", "type": "input"} ] },
 
 }
 var g_congrats_url = "/congrats.php";
