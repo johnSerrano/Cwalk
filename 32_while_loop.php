@@ -1,7 +1,7 @@
 <?
-$page_title = 'Else If Statements';
+$page_title = 'While Loop';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'Fill the blanks.';
+$instructions = 'Fill in the appropriate value so the program will output "0123".';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
@@ -13,26 +13,14 @@ require_once('header.php');
 
 int main(void)
 {
-    int n = 5;
-    int m = 4
-    if (n &#62;= 1) {
-        f(n);
-    }
-    else if (m &#60;= 4) {
-        printf("B");
+    int n = 0;
+    
+    while (n &#60; <input type="text" id="input_0" class="input-small"/>) {
+        printf("%dn");
+        n++;
     }
     return (0);
 }
-
-void f(int n)
-{
-    printf("%d\n", n);
-}
-
-$ gcc main.c
-$ ./a.out
-<input type="text" id="input_0" class="input-small"/>
-$
 </div>
 <div id="message"></div>
 <div>

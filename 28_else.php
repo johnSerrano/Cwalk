@@ -14,7 +14,7 @@ require_once('header.php');
 int main(void)
 {
     int n = 5;
-    if (n &60; 1) {
+    if (n &#60; 1) {
         printf("A\n");
     }
     else {

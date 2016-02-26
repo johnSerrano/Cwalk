@@ -1,5 +1,5 @@
 <?
-$page_title = 'Else If Statements';
+$page_title = 'Another While Loop';
 $html_title = $page_title . ' | cwalk';
 $instructions = 'Fill the blanks.';
 $html_description = "$page_title: $instructions";
@@ -13,19 +13,10 @@ require_once('header.php');
 
 int main(void)
 {
-    int n = 5;
-    int m = 4
-    if (n &#62;= 1) {
-        f(n);
+    int n = 496;
+    while ( n % 2 == 0) {
+        n = n / 2;
     }
-    else if (m &#60;= 4) {
-        printf("B");
-    }
-    return (0);
-}
-
-void f(int n)
-{
     printf("%d\n", n);
 }
 

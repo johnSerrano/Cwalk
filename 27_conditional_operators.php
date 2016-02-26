@@ -20,10 +20,10 @@ int main(void)
     if (n != 4) {
         printf("B\n");
     }
-    if (n &62; 4) {
+    if (n &#62; 4) {
         printf("C\n");
     }
-    if (n &60; 4) {
+    if (n &#60; 4) {
         printf("D\n");
     }
     return (0);

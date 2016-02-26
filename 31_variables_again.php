@@ -15,10 +15,10 @@ int main(void)
 {
     int n = 5;
 
-    if (n &62; 1) {
+    if (n &#62; 1) {
         n = 1;
     }
-    if (n &62;= 4) {
+    if (n &#62;= 4) {
         printf("B");
     }
     else {
