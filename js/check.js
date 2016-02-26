@@ -30,6 +30,12 @@ var g_answers = {
     "/23_even_more_f_calls.php": { "answers": [ { "a": /^98$/, "type": "regex" }, { "a": /^17$/, "type": "regex" }, { "a": /^10$/, "type": "regex" }, { "a": /^13$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },
     "/24_sub.php": { "answers": [ { "a": /^-94$/, "type": "regex" }, { "a": /^-3$/, "type": "regex" }, { "a": /^4$/, "type": "regex" }, { "a": /^-1$/, "type": "regex" }, { "a": /^7$/, "type": "regex" } ] },
     "/25_scope.php": { "answers": [ { "a": /^13$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^101$/, "type": "regex" }, { "a": /^0$/, "type": "regex" }, { "a": /^3$/, "type": "regex" }, { "a": /^37$/, "type": "regex" }, { "a": /^0$/, "type": "regex" } ] },
+    "/26_if_statements.php": { "answers": [ {"a": "B", "type": "input"} ] },
+    "/27_conditional_operators.php": { "answers": [ {"a": "B", "type": "input"}, {"a": "C", "type": "input"} ] },
+    "/28_else.php": { "answers": [ {"a": "B", "type": "input"} ] },
+    "/29_else_if.php": { "answers": [ {"a": "5", "type": "input"} ] },
+    "/30_all_together_now.php": { "answers": [ {"a": "C", "type": "input"} ] },
+    "/31_variables_again.php": { "answers": [ {"a": "1", "type": "input"} ] },
 
 }
 var g_congrats_url = "/congrats.php";
