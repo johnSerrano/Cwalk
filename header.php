@@ -34,6 +34,7 @@
   <body onload="install_enter_on_inputs()">
 
     <div class="container">
+<? require_once('progress_bar.php'); ?>
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
