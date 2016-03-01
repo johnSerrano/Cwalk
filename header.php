@@ -1,3 +1,35 @@
+<?
+session_start();
+
+$user_name = $_SESSION['user_name'];
+$page_name =  $_SERVER['PHP_SELF'];
+
+if ( ($user_name == NULL)==0 ) {
+
+  require_once('mysql_connect.php');
+  $queryPage = "SELECT page_order FROM pages WHERE name='$page_name' ";
+  $responsePage  = @mysqli_query($dbc, $queryPage);
+  if ($responsePage){
+    $result = mysqli_fetch_array($responsePage) ;
+    $actual_page = $result['page_order'];
+    if ( $actual_page ){
+      $queryUpdate = "UPDATE users SET last_page=$actual_page WHERE user_name = '$user_name'";
+      $responseUpdate  = @mysqli_query($dbc, $queryUpdate);
+      if (!$responseUpdate) {
+          die('Query failed to execute for some reason');
+      }
+    }
+
+  } else {
+    echo 'Could not issue database query' ;
+    echo mysqli_error($dbc);
+  }
+
+}  else{
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
