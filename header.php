@@ -71,11 +71,11 @@ if ( ($user_name == NULL)==0 ) {
     <div class="login">
        <?  if ( $_SESSION["user_name"] != NULL ) { ?>
            <!-- <a href="logout.php"> Logout from: <? echo $_SESSION["user_name"] ?> </a> -->
-           <a class="btn-auth btn-github large" href="logout.php">
+           <a class="btn-auth btn-github" href="logout.php">
               <? echo $_SESSION["user_name"] ?>
             </a>
        <? }  else {  ?>
-             <a class="btn-auth btn-github large" href="login.php">
+             <a class="btn-auth btn-github" href="login.php">
               Sign in with <b>Github</b>
             </a>
             <!-- <a href="login.php"> Login  with Github </a> -->
