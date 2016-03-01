@@ -65,6 +65,20 @@ if ( ($user_name == NULL)==0 ) {
 
   <body onload="install_enter_on_inputs()">
 
+    <div class="login">
+       <?  if ( $_SESSION["user_name"] != NULL ) { ?>
+           <!-- <a href="logout.php"> Logout from: <? echo $_SESSION["user_name"] ?> </a> -->
+           <a class="btn-auth btn-github large" href="logout.php">
+              <? echo $_SESSION["user_name"] ?>
+            </a>
+       <? }  else {  ?>
+             <a class="btn-auth btn-github large" href="login.php">
+              Sign in with <b>Github</b>
+            </a>
+            <!-- <a href="login.php"> Login  with Github </a> -->
+       <? } ?>
+    </div>
+
     <div class="container">
 <? require_once('progress_bar.php'); ?>
       <div class="header clearfix">
