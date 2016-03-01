@@ -193,4 +193,9 @@ body {
     background: linear-gradient(#E60002, #F80002);
 }
 
+.login{
+    float: right;
+    margin-right: 30px;
+}
+
 
