@@ -93,7 +93,7 @@ else
         }
 
         // create new user :
-        $query = "INSERT INTO users (user_name, email, user_id) VALUES (?, ?, NULL)" ;
+        $query = "INSERT INTO users (user_name, email, last_page, user_id) VALUES (?, ?, ?, NULL)" ;
         $stmt = mysqli_prepare($dbc, $query);
         mysqli_stmt_bind_param($stmt,"ssi",$login,$email,$initial_page_nb);
         mysqli_stmt_execute($stmt);
