@@ -51,25 +51,51 @@ else
 
     $_SESSION["user_name"]= $login;
 
-    $goToPage = NULL;
     require_once('mysql_connect.php');
-
     // check if exist
     $queryExist = "SELECT user_name,last_page from users WHERE user_name = '$login'";
     $responseExist  = @mysqli_query($dbc, $queryExist);
     if (!$responseExist) {
         die('Query failed to execute for some reason');
     }
-   if (mysqli_num_rows($responseExist) ==1) {
-        // incrment $goToPage
-    $result = mysqli_fetch_array($responseExist) ;
-        $goToPage = $result['last_page'];
+    if (mysqli_num_rows($responseExist) ==1) {
+        // instantiation $last_page
+        $result = mysqli_fetch_array($responseExist) ;
+        $last_page_nb = $result['last_page'];
+
+          require_once('mysql_connect.php');
+          $queryPage = "SELECT name FROM pages WHERE page_order='$last_page_nb' ";
+          $responsePage  = @mysqli_query($dbc, $queryPage);
+          if ($responsePage){
+            $result = mysqli_fetch_array($responsePage) ;
+            $last_page_url = $result['name'];
+            $location = "http://www.cwalk.guru$last_page_url";
+            header('Location: '.$location);
+          } else {
+            echo 'Could not issue database query' ;
+            echo mysqli_error($dbc);
+          }
+
     }
     else{
+
+        $initial_page_nb = 0;
+        require_once('mysql_connect.php');
+        $actual_page_url =  $_SESSION['actual_url'];
+        $queryPage = "SELECT page_order FROM pages WHERE name='$actual_page_url' ";
+        $responsePage  = @mysqli_query($dbc, $queryPage);
+        if ($responsePage){
+            $result = mysqli_fetch_array($responsePage) ;
+            $initial_page_nb = $result['page_order'];
+        } else {
+            echo 'Could not issue database query' ;
+            echo mysqli_error($dbc);
+        }
+
         // create new user :
         $query = "INSERT INTO users (user_name, email, user_id) VALUES (?, ?, NULL)" ;
         $stmt = mysqli_prepare($dbc, $query);
-        mysqli_stmt_bind_param($stmt,"ss",$login,$email);
+        mysqli_stmt_bind_param($stmt,"ssi",$login,$email,$initial_page_nb);
         mysqli_stmt_execute($stmt);
 
         $affected_rows = mysqli_stmt_affected_rows($stmt);
@@ -81,28 +107,12 @@ else
             mysqli_stmt_close($stmt);
             mysqli_close($dbc);
         }
-        }
-    if( $goToPage == NULL ){
-        // header('Location: http://www.cwalk.guru/index.php');
+
         $actual_url = $_SESSION['actual_url'];
         $location = "http://www.cwalk.guru$actual_url";
         header('Location: '.$location);
     }
-    else{
-          require_once('mysql_connect.php');
-          $queryPage = "SELECT name FROM pages WHERE page_order='$goToPage' ";
-          $responsePage  = @mysqli_query($dbc, $queryPage);
-          if ($responsePage){
-            $result = mysqli_fetch_array($responsePage) ;
-            $actual_page = $result['name'];
-            $location = "http://www.cwalk.guru$actual_page";
-            // echo $location;
-            header('Location: '.$location);
-          } else {
-            echo 'Could not issue database query' ;
-            echo mysqli_error($dbc);
-          }
-    }
+ 
 }
 
 ?>
