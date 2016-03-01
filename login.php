@@ -58,11 +58,33 @@ else
     if (!$responseExist) {
         die('Query failed to execute for some reason');
     }
+
+    // get the nb of the actual page
+    $actual_page_nb = 0;
+    require_once('mysql_connect.php');
+    $actual_page_url =  $_SESSION['actual_url'];
+    $queryPage = "SELECT page_order FROM pages WHERE name='$actual_page_url' ";
+    $responsePage  = @mysqli_query($dbc, $queryPage);
+    if ($responsePage){
+        $result = mysqli_fetch_array($responsePage) ;
+         $actual_page_nb = $result['page_order'];
+    } else {
+       echo 'Could not issue database query' ;
+       echo mysqli_error($dbc);
+    }
+
+
     if (mysqli_num_rows($responseExist) ==1) {
         // instantiation $last_page
         $result = mysqli_fetch_array($responseExist) ;
         $last_page_nb = $result['last_page'];
 
+        if ($actual_page_nb > $last_page_nb ){
+            $actual_url = $_SESSION['actual_url'];
+            $location = "http://www.cwalk.guru$actual_url";
+            header('Location: '.$location);
+        }
+        else{
           require_once('mysql_connect.php');
           $queryPage = "SELECT name FROM pages WHERE page_order='$last_page_nb' ";
           $responsePage  = @mysqli_query($dbc, $queryPage);
@@ -75,22 +97,9 @@ else
             echo 'Could not issue database query' ;
             echo mysqli_error($dbc);
           }
-
+        }
     }
     else{
-
-        $initial_page_nb = 0;
-        require_once('mysql_connect.php');
-        $actual_page_url =  $_SESSION['actual_url'];
-        $queryPage = "SELECT page_order FROM pages WHERE name='$actual_page_url' ";
-        $responsePage  = @mysqli_query($dbc, $queryPage);
-        if ($responsePage){
-            $result = mysqli_fetch_array($responsePage) ;
-            $initial_page_nb = $result['page_order'];
-        } else {
-            echo 'Could not issue database query' ;
-            echo mysqli_error($dbc);
-        }
 
         // create new user :
         $query = "INSERT INTO users (user_name, email, last_page, user_id) VALUES (?, ?, ?, NULL)" ;
