@@ -72,7 +72,8 @@ if ( ($user_name == NULL)==0 ) {
        <?  if ( $_SESSION["user_name"] != NULL ) { ?>
            <!-- <a href="logout.php"> Logout from: <? echo $_SESSION["user_name"] ?> </a> -->
            <a class="btn-auth btn-github" href="logout.php">
-              <? echo $_SESSION["user_name"] ?>
+              <!-- <? echo $_SESSION["user_name"] ?> -->
+              Logout
             </a>
        <? }  else {  ?>
              <a class="btn-auth btn-github" href="login.php">
