@@ -83,7 +83,10 @@ else
         }
         }
     if( $goToPage == NULL ){
-        header('Location: http://www.cwalk.guru/index.php');
+        // header('Location: http://www.cwalk.guru/index.php');
+        $actual_url = $_SESSION['actual_url'];
+        $location = "http://www.cwalk.guru$actual_url";
+        header('Location: '.$location);
     }
     else{
           require_once('mysql_connect.php');

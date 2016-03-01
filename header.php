@@ -1,6 +1,8 @@
 <?
 session_start();
 
+$_SESSION['actual_url'] =  $_SERVER['PHP_SELF'];
+
 $user_name = $_SESSION['user_name'];
 $page_name =  $_SERVER['PHP_SELF'];
 
