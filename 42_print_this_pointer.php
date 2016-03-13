@@ -16,7 +16,7 @@ int main(char c)
     char *n;
     *n = c;
     c = 0;
-    printf( "<input type="text" id="input_0" class="input-medium"/>", <input type="text" id="input_0" class="input-medium"/> );
+    printf( "<input type="text" id="input_0" class="input-medium"/>", <input type="text" id="input_1" class="input-medium"/> );
     return (0);
 }"
 
