@@ -53,7 +53,7 @@ var g_answers = {
     "/46_swapchat.php": { "answers": [ {"a": "z, z", "type": "input"} ] },
     "/47_to_array_a_mans_will.php": { "answers": [ {"a": /\s*char\s+a\s*\[\s*3\s*]\s*(;+\s*)+/, "type": "regex"} ] },
     "/48_arrays_my_love.php": { "answers": [ {"a": "a[2]", "type": "input"} ] },
-    "/49_my_address_is_like_my_shoes_it_travels_with_me.php": { "answers": [ {"a": "0x7ffee3508bf0", "type": "input"} ] },
+    "/49_my_address_is_like_my_shoes_it_travels_with_me.php": { "answers": [ {"a": "0x7ffee3508bf8", "type": "input"} ] },
     "/50_nightmare.php": { "answers": [ {"a": "8, 4, 12, 4", "type": "input"} ] },
 
 }
