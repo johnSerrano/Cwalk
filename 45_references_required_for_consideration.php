@@ -11,7 +11,7 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-void change(<input type="text" id="input_0" class="input-medium"/> p)
+void change(<input type="text" id="input_0" class="input-large"/> p)
 {
 	<input type="text" id="input_1" class="input-medium"/> = 'z';
 }
