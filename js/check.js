@@ -44,6 +44,12 @@ var g_answers = {
     "/37_for_four_fore.php": { "answers": [ {"a": "012340123012010", "type": "input"} ] },
     "/38_i_could_go_for_another_loop.php": { "answers": [ {"a": /\s*4\s*/, "type": "regex"}, {"a": /\s*8\s*/, "type": "regex"} ] },
     "/39_alphabet.php": { "answers": [ {"a": "abcdefghijklmnopqrstuvwxyz", "type": "input"} ] },
+    "/40_pointer_here_we_are.php": { "answers": [ {"a": "char *", "type": "input"} ] },
+    "/42_print_this_pointer.php": { "answers": [ {"a": "%c", "type": "input"}, {"a": "*n", "type": "input"} ] },
+    "/44_nobody_at_this_address.php": { "answers": [ {"a": "&c;", "type": "input"} ] },
+    "/46_swapchat.php": { "answers": [ {"a": "a, a", "type": "input"} ] },
+    "/48_arrays_my_love.php": { "answers": [ {"a": "a[2]", "type": "input"} ] },
+    "/50_nightmare.php": { "answers": [ {"a": "8, 4, 12, 4", "type": "input"} ] },
 
 }
 var g_congrats_url = "/congrats.php";
