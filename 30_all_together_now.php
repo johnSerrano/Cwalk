@@ -11,10 +11,10 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     int n = 5;
-    int m = 4
+    int m = 4;
+
     if (n &#60;= 1) {
         printf("A");
     }
@@ -27,8 +27,7 @@ int main(void)
     return (0);
 }
 
-void f(int n)
-{
+void f(int n) {
     printf("%d", n);
 }
 
