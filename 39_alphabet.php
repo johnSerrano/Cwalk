@@ -11,11 +11,10 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     char c;
 
-    for (c = 'a'; n &#60;= 'z'; c++) {
+    for (c = 'a'; c &#60;= 'z'; c++) {
         printf("%d", c);
     }
     printf("\n");
