@@ -11,10 +11,10 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     char *p;
-	<input type="text" id="input_0" class="input-medium"/> = 42;
+
+    <input type="text" id="input_0" class="input-medium"/> = 42;
     return (0);
 }
 
