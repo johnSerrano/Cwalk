@@ -13,8 +13,7 @@ require_once('header.php');
 
 void f(int n);
 
-int main(void)
-{
+int main(void) {
     int n = 5;
 
     if (n &#62; 1) {
@@ -29,8 +28,7 @@ int main(void)
     return (0);
 }
 
-void f(int n)
-{
+void f(int n) {
     printf("%d\n", n);
 }
 
