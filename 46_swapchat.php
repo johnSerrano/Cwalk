@@ -11,16 +11,17 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-void swap(char *a, char*b)
-{
+void swap(char *a, char*b) {
     *a = *b ; 
     *b = *a ; 
 }
 
-int main(void)
-{
-    char a = 'a';
-    char b = 'z';
+int main(void) {
+    char a;
+    char b;
+
+    a = 'a';
+    b = 'z';
     swap(&b, &a);
     printf("%c, %c\n", a, b );
     return (0);
