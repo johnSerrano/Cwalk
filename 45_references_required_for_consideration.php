@@ -11,16 +11,15 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-void change(<input type="text" id="input_0" class="input-large"/> p)
-{
+void change(<input type="text" id="input_0" class="input-large"/>p) {
 	<input type="text" id="input_1" class="input-medium"/> = 'z';
 }
 
-int main(void)
-{
+int main(void) {
     char c;
-	c = 'A';
-	change(<input type="text" id="input_2" class="input-medium"/>);
+    
+    c = 'A';
+    change(<input type="text" id="input_2" class="input-medium"/>);
     return (0);
 }
 
