@@ -13,9 +13,10 @@ require_once('header.php');
 
 int main(void)
 {
-	unsigned long a[3];
-	printf("%p\n", &a[0]);
-	printf("%p\n", &a[1]);
+    unsigned long a[3];
+	
+    printf("%p\n", &a[0]);
+    printf("%p\n", &a[1]);
     return (0);
 }
 
