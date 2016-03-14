@@ -11,8 +11,7 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     int n = 0;
     
     while (n &#60; <input type="text" id="input_0" class="input-small"/>) {
