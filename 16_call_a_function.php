@@ -15,6 +15,7 @@ require_once('header.php');
 </div>
 
 <div class="ide">void f(void);
+
 int main(void) {
   <input type="text" id="input_0" class="input-medium"/>
   return (0);
