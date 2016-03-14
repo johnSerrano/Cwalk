@@ -14,6 +14,7 @@ require_once('header.php');
 int main(void)
 {
     int n = 5;
+    
     if (n == 1) {
         printf("A\n");
     }
