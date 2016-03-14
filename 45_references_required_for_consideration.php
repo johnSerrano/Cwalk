@@ -1,7 +1,7 @@
 <?
-$page_title = 'Print the pointer.';
+$page_title = 'References Required for Consideration';
 $html_title = $page_title . ' | cwalk';
-$instructions = "Print the value of the character c using the pointer n.";
+$instructions = 'Change the value of c to \'z\'';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
@@ -9,16 +9,20 @@ require_once('header.php');
     <p><?= $instructions ?></p>
 </div>
 <div class="console">$ cat main.c
-"#include &#60;stdio.h&#62;
+#include &#60;stdio.h&#62;
 
-int main(char c)
+void change(<input type="text" id="input_0" class="input-large"/> p)
 {
-    char *n;
-    *n = c;
-    c = 0;
-    printf( "<input type="text" id="input_0" class="input-medium"/>", <input type="text" id="input_1" class="input-medium"/> );
+	<input type="text" id="input_1" class="input-medium"/> = 'z';
+}
+
+int main(void)
+{
+    char c;
+	c = 'A';
+	change(<input type="text" id="input_2" class="input-medium"/>);
     return (0);
-}"
+}
 
 </div>
 <div id="message"></div>

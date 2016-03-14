@@ -45,10 +45,15 @@ var g_answers = {
     "/38_i_could_go_for_another_loop.php": { "answers": [ {"a": /\s*4\s*/, "type": "regex"}, {"a": /\s*8\s*/, "type": "regex"} ] },
     "/39_alphabet.php": { "answers": [ {"a": "abcdefghijklmnopqrstuvwxyz", "type": "input"} ] },
     "/40_pointer_here_we_are.php": { "answers": [ {"a": "char *", "type": "input"} ] },
+	"/41_point_to_something.php": { "answers": [ { "a": /\s*\*\s*p\s*/ , "type": "regex"} ] },
     "/42_print_this_pointer.php": { "answers": [ {"a": "%c", "type": "input"}, {"a": "*n", "type": "input"} ] },
+	"/43_would_it_fit_inside_a_breadbox.php": { "answers": [ { "a": "8" , "type": "input"}, { "a": "1" , "type": "input"}, { "a": "4" , "type": "input"}, { "a": "1" , "type": "input"} ] },
     "/44_nobody_at_this_address.php": { "answers": [ {"a": "&c;", "type": "input"} ] },
-    "/46_swapchat.php": { "answers": [ {"a": "a, a", "type": "input"} ] },
+    "/45_references_required_for_consideration.php": { "answers": [ {"a": /\s*char\s*\*\s*/, "type": "regex"}, {"a": /\s*\*\s*p\s*/, "type": "regex"}, {"a": /\s*\&\s*c\s*/, "type": "regex"} ] },
+    "/46_swapchat.php": { "answers": [ {"a": "z, z", "type": "input"} ] },
+    "/47_to_array_a_mans_will.php": { "answers": [ {"a": /\s*char\s+a\s*\[\s*3\s*]\s*(;+\s*)+/, "type": "regex"} ] },
     "/48_arrays_my_love.php": { "answers": [ {"a": "a[2]", "type": "input"} ] },
+    "/49_my_address_is_like_my_shoes_it_travels_with_me.php": { "answers": [ {"a": "0x7ffee3508bf8", "type": "input"} ] },
     "/50_nightmare.php": { "answers": [ {"a": "8, 4, 12, 4", "type": "input"} ] },
 
 }
