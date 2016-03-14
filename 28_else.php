@@ -11,9 +11,9 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     int n = 5;
+    
     if (n &#60; 1) {
         printf("A\n");
     }
