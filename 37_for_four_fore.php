@@ -11,12 +11,12 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     int n;
     int j;
-    for ( n = 5; n &#62; 0; n--) {
-        for ( j = 0; j &#60; n; j++) {
+
+    for (n = 5; n &#62; 0; n--) {
+        for (j = 0; j &#60; n; j++) {
             printf("%d", j);
         }
     }
