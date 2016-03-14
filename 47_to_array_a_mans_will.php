@@ -11,9 +11,8 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
-	<input type="text" id="input_0" class="input-large"/>
+int main(void) {
+    <input type="text" id="input_0" class="input-large"/>
     return (0);
 }
 
