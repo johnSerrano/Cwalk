@@ -11,10 +11,10 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-int main(void)
-{
+int main(void) {
     int n = 5;
     int j;
+
     while (n &#62; 0) {
         j = 0;
         while (j &#60; n) {
