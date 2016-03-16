@@ -15,7 +15,7 @@ int main(void) {
     char c;
 
     for (c = 'a'; c &#60;= 'z'; c++) {
-        printf("%d", c);
+        printf("%c", c);
     }
     printf("\n");
 }
