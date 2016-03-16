@@ -9,14 +9,14 @@ require_once('header.php');
     <p><?= $instructions ?></p>
 </div>
 <div class="console">$ cat main.c
-"#include &#60;stdio.h&#62;
+#include &#60;stdio.h&#62;
 
 int main(void)
 {
     char c = 'c';
     char *n;
     n = &c;
-    printf( "%c\n", <input type="text" id="input_1" class="input-medium"/> );
+    printf("%c\n", <input type="text" id="input_0" class="input-medium"/>);
     return (0);
 }
 
