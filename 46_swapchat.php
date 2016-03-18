@@ -11,7 +11,7 @@ require_once('header.php');
 <div class="console">$ cat main.c
 #include &#60;stdio.h&#62;
 
-void swap(char *a, char*b) {
+void swap(char *a, char *b) {
     *a = *b ; 
     *b = *a ; 
 }
