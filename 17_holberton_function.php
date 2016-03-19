@@ -25,8 +25,7 @@ void f(void)
 }
 $ gcc main.c
 $ ./a.out
-<input type="text" id="input_0" class="input-large"/>
-$
+<input type="text" id="input_0" class="input-large"/>$
 </div>
 <div id="message"></div>
 <div>
