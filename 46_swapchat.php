@@ -23,7 +23,7 @@ int main(void) {
     a = 'a';
     b = 'z';
     swap(&b, &a);
-    printf("%c, %c\n", a, b );
+    printf("%c, %c\n", a, b);
     return (0);
 }
 
