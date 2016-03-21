@@ -14,7 +14,7 @@ require_once('header.php');
 int main(void)
 {
     char c;
-    char * p;
+    char *p;
     p = <input type="text" id="input_0" class="input-large"/> 
     printf("%p",p);
     return (0);
