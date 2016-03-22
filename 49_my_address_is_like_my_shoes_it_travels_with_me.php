@@ -1,7 +1,7 @@
 <?
 $page_title = 'My Address Is Like My Shoes; It Travels With Me';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'What is the ouput ?';
+$instructions = 'What is the ouput on a 64-bit machine ?';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>

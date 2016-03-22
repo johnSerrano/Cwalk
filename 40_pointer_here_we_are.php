@@ -1,7 +1,7 @@
 <?
 $page_title = 'Pointer Here We Are.';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'Declare an pointer to a character.';
+$instructions = 'Declare a pointer to a character.';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
