@@ -13,7 +13,7 @@ require_once('header.php');
 int main(void) {
     int n;
 
-    for (n = <input type="text" id="input_0" class="input-small"/>; n &#60; <input type="text" id="input_1" class="input-small"/>; n--) {
+    for (n = <input type="text" id="input_0" class="input-small"/>; n &#60; <input type="text" id="input_1" class="input-small"/>; n++) {
         printf("%d", n);
     }
     printf("\n");

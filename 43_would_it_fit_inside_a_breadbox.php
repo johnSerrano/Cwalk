@@ -9,7 +9,7 @@ require_once('header.php');
     <p><?= $instructions ?></p>
 </div>
 <div class="console">$ cat main.c
-"#include &#60;stdio.h&#62;
+#include &#60;stdio.h&#62;
 
 int main(void)
 {
