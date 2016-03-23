@@ -92,6 +92,8 @@ function correct() {
     a.className = "alert alert-success";
     a.innerHTML="BOOM! Congrats!";
     a.style.display = 'block';
+    var audio = document.getElementById("audio");
+    audio.play();
 
 }
 
