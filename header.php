@@ -11,10 +11,14 @@ if ( ($user_name == NULL)==0 ) {
   require_once('mysql_connect.php');
   $queryPage = "SELECT page_order FROM pages WHERE name='$page_name' ";
   $responsePage  = @mysqli_query($dbc, $queryPage);
-  if ($responsePage){
+  $queryLastPage = "SELECT last_page FROM users WHERE user_name='$user_name' ";
+  $responseLastPage  = @mysqli_query($dbc, $queryLastPage);
+  if ( $responsePage && $responseLastPage ){
     $result = mysqli_fetch_array($responsePage) ;
     $actual_page = $result['page_order'];
-    if ( $actual_page ){
+    $resultLastPage = mysqli_fetch_array($responseLastPage);
+    $lastPage = $resultLastPage["last_page"];
+    if ( $actual_page > $lastPage ){
       $queryUpdate = "UPDATE users SET last_page=$actual_page WHERE user_name = '$user_name'";
       $responseUpdate  = @mysqli_query($dbc, $queryUpdate);
       if (!$responseUpdate) {
