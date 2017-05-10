@@ -1,7 +1,7 @@
 <?
 $page_title = 'Nightmare';
 $html_title = $page_title . ' | cwalk';
-$instructions = 'What does it print?';
+$instructions = 'What does it print on a 64-bit machine ?';
 $html_description = "$page_title: $instructions";
 require_once('header.php');
 ?>
